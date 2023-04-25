@@ -27,9 +27,7 @@ body {
 
 .content {
   display: flex;
-  flex-direction: row;
   height: 550px;
-  margin: 0px 0px 30px 0px;
 }
 
 .selector {
@@ -40,7 +38,7 @@ body {
   height: 100%;
   margin: 0px 0px 0px 30px;
   align-items: center;
-  border-radius: 0px 0px 0px 20px;
+  border-radius: 0px 0px 0px 10px;
   border: 5px solid #ff7cd3;
   border-top: 0px;
 }
@@ -50,7 +48,7 @@ body {
   box-sizing: border-box;
   width: 60%;
   height: 30%;
-  margin: 20px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
   background: #ecebeb;
   border: 10px solid #6898f8;
   border-radius: 50px;
@@ -64,13 +62,12 @@ body {
 .selector-box-pants {
   width: 80%;
   object-fit: contain;
-  height: 80%;
+  height: 70%;
   cursor: pointer;
 }
 
 .character {
   display: flex;
-  flex-direction: row;
   background: #c5fabc;
   width: 50%;
   height: 100%;
@@ -84,30 +81,20 @@ body {
   border-left: 0px;
 }
 
-.character-box {
-  width: 60%;
-  position: relative;
-}
-
-.character-box-avatar {
-  width: 100%;
-}
-
 .character-colours {
-  width: 60%;
-  height: 20%;
   background: #ecebeb;
   border: 10px solid #ffd3eb;
   border-radius: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  padding: 10px;
+  padding: 15px;
+  gap: 10px;
 }
 
 .character-colours-box-one {
-  width: 60%;
-  height: 60%;
+  width: 40px;
+  height: 40px;
   background: #f998c7;
   border: 5px solid #c4c4c4;
   border-radius: 10px;
@@ -115,63 +102,97 @@ body {
 }
 
 .character-colours-box-two {
-  width: 60%;
-  height: 60%;
+  width: 40px;
+  height: 40px;
   background: #ffcea0;
   border: 5px solid #c4c4c4;
   border-radius: 10px;
   cursor: pointer;
 }
 .character-colours-box-three {
-  width: 60%;
-  height: 60%;
+  width: 40px;
+  height: 40px;
   background: #eabcfa;
   border: 5px solid #c4c4c4;
   border-radius: 10px;
   cursor: pointer;
 }
 .character-colours-box-four {
-  width: 60%;
-  height: 60%;
+  width: 40px;
+  height: 40px;
   background: #faf0bc;
   border: 5px solid #c4c4c4;
   border-radius: 10px;
   cursor: pointer;
 }
 .character-colours-box-five {
-  width: 60%;
-  height: 60%;
+  width: 40px;
+  height: 40px;
   background: #bcf2fa;
   border: 5px solid #c4c4c4;
   border-radius: 10px;
   cursor: pointer;
 }
 .character-colours-box-six {
-  width: 60%;
-  height: 60%;
+  width: 40px;
+  height: 40px;
   background: #bcfac6;
   border: 5px solid #c4c4c4;
   border-radius: 10px;
   cursor: pointer;
 }
 
+.character-box {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.character-box-avatar {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-box-head {
+  background-image: url("/static/head.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 36%;
+}
+
+.character-box-chest {
+  background-image: url("/static/chest.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 27%;
+}
+
+.character-box-legs {
+  background-image: url("/static/legs.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 37%;
+}
+
 .character-box-hair {
-  position: absolute;
-  left: 12px;
-  top: 34px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .character-box-hoodie {
-  position: absolute;
-  top: 148px;
-  left: 0px;
-  height: 37%;
-  z-index: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .character-box-pants {
-  position: absolute;
-  height: 32%;
-  bottom: 11px;
-  left: 47px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
