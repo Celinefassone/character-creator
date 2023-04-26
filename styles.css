@@ -1,3 +1,8 @@
+:root {
+  /* here too rofl */
+  --color-pink: #ffcea0;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -92,55 +97,24 @@ body {
   gap: 10px;
 }
 
-.character-colours-box-one {
+.character-colours-selection {
   width: 40px;
-  height: 40px;
-  background: #f998c7;
+  height: 40px;  
   border: 5px solid #c4c4c4;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.character-colours-box-two {
-  width: 40px;
-  height: 40px;
+/* here lol */
+.character-colours-red {
   background: #ffcea0;
-  border: 5px solid #c4c4c4;
-  border-radius: 10px;
-  cursor: pointer;
 }
-.character-colours-box-three {
-  width: 40px;
-  height: 40px;
-  background: #eabcfa;
-  border: 5px solid #c4c4c4;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.character-colours-box-four {
-  width: 40px;
-  height: 40px;
-  background: #faf0bc;
-  border: 5px solid #c4c4c4;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.character-colours-box-five {
-  width: 40px;
-  height: 40px;
-  background: #bcf2fa;
-  border: 5px solid #c4c4c4;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.character-colours-box-six {
-  width: 40px;
-  height: 40px;
-  background: #bcfac6;
-  border: 5px solid #c4c4c4;
-  border-radius: 10px;
-  cursor: pointer;
-}
+
+/* background: #f998c7;
+background: #eabcfa;
+background: #faf0bc;
+background: #bcf2fa;
+background: #bcfac6; */
 
 .character-box {
   width: 60%;
