@@ -1,0 +1,32 @@
+.selector {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-oldpink);
+  width: var(--global-size-m);
+  height: var(--global-size-xl);
+  margin: 0px 0px 0px 30px;
+  align-items: center;
+  border-radius: 0px 0px 0px 10px;
+  border: 5px solid;
+  border-color: var(--color-bubblegum);
+  border-top: 0px;
+  padding: 20px 0px 20px 0px;
+  display: none;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-orange);
+  width: var(--global-size-m);
+  height: var(--global-size-xl);
+  margin: 0px 0px 0px 30px;
+  align-items: center;
+  border-radius: 0px 0px 0px 10px;
+  border: 5px solid;
+  border-color: var(--color-bubblegum);
+  border-top: 0px;
+  overflow-y: scroll;
+  position: relative;
+  padding: 20px 0px 20px 0px;
+}

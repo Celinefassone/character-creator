@@ -1,0 +1,44 @@
+.popup-box {
+  display: flex;
+  box-sizing: border-box;
+  width: var(--global-size-l);
+  height: var(--global-size-s);
+  margin: 10px 0px 10px 0px;
+  background: var(--color-grey);
+  border: 10px solid;
+  border-color: var(--color-sky);
+  border-radius: 50px;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.popup-box:hover {
+  border-color: var(--color-bubblegum);
+}
+
+.popup-box-hair,
+.popup-box-hoodie,
+.popup-box-pants {
+  width: 80%;
+  object-fit: contain;
+  height: 70%;
+  cursor: pointer;
+}
+
+.back-button {
+  position: absolute;
+  left: 10px;
+  width: 40px;
+  height: 28px;
+  top: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  border-color: var(--color-sky);
+  border-style: solid;
+  border-radius: 3px;
+}
+
+.back-button:hover {
+  color: var(--color-sky);
+}

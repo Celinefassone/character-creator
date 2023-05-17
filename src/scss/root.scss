@@ -1,0 +1,27 @@
+:root {
+  --color-pink: #f998c7;
+  --color-orange: #ffcea0;
+  --color-lilac: #eabcfa;
+  --color-yellow: #faf0bc;
+  --color-turquoise: #bcf2fa;
+  --color-mint: #bcfac6;
+  --color-bubblegum: #ff7cd3;
+  --color-sand: #fff8d3;
+  --color-oldpink: #ffd3eb;
+  --color-sky: #6898f8;
+  --color-grey: #ecebeb;
+  --color-darkgrey: #c4c4c4;
+
+  --base-font-size: 40px;
+
+  --global-size-s: 30%;
+  --global-size-m: 50%;
+  --global-size-l: 60%;
+  --global-size-xl: 100%;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --base-font-size: 16px;
+  }
+}

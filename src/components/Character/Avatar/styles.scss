@@ -1,0 +1,82 @@
+.character-box {
+  width: var(--global-size-l);
+  height: var(--global-size-l);
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.character-box-avatar {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-box-head,
+.character-box-chest,
+.character-box-legs {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.character-box-head {
+  background-image: url("/static/head.svg");
+  height: 36%;
+}
+
+.character-box-chest {
+  background-image: url("/static/chest.svg");
+  height: 27%;
+  position: relative;
+}
+
+.character-box-legs {
+  background-image: url("/static/legs.svg");
+  height: 37%;
+  position: relative;
+}
+
+.character-box-img {
+  height: var(--global-size-xl);
+  width: var(--global-size-xl);
+  object-fit: contain;
+}
+
+.character-box-shirt {
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+  object-fit: contain;
+}
+
+.character-box-pants {
+  position: absolute;
+  left: 45px;
+  z-index: 1;
+  width: 47%;
+  object-fit: contain;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+  .character-colours-selection {
+    width: 30px;
+    height: 30px;
+  }
+  .character-box-head {
+    height: 23%;
+  }
+
+  .character-box-chest {
+    height: 15%;
+  }
+
+  .character-box-legs {
+    height: 20%;
+  }
+  .character-box-pants {
+    left: 26px;
+  }
+}
