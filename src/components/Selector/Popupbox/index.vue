@@ -3,39 +3,57 @@ import { mapState } from 'vuex'
 </script>
 
 <template>
-  <h1>{{selection}}</h1>
 <div v-show="isVisible" class="popup">
   <button class="back-button" @click="handleClose"> ← </button>
-  <div v-if="false">
-    Legs here
+  <div class="popup-inside" v-if= "selection === 'head'">
+    <button class="popup-box">
+    <img class="popup-box-head" src="/images/wardrobe/head/diva.svg" />
+  </button>
+  <button class="popup-box">
+    <img class="popup-box-head" src="/images/wardrobe/head/hair.svg" />
+  </button>
+  <button class="popup-box">
+    <img class="popup-box-head" src="/images/wardrobe/head/shaggy.svg" />
+  </button>
+  <button class="popup-box">
+    <img class="popup-box-head" src="/images/wardrobe/head/braids.svg" />
+  </button>
   </div>
-  <div v-else-if="false">
-    Legs here
+  <div class="popup-inside" v-else-if= "selection === 'chest'">
+    <button class="popup-box">
+    <img class="popup-box-chest" src="/images/wardrobe/chest/dolly.svg" />
+  </button>
+  <button class="popup-box">
+    <img class="popup-box-chest" src="/images/wardrobe/chest/hoodie.svg" />
+  </button>
+  <button class="popup-box">
+    <img class="popup-box-chest" src="/images/wardrobe/chest/sleeveless.svg" />
+  </button>
+  <button class="popup-box">
+    <img class="popup-box-chest" src="/images/wardrobe/chest/sweater.svg" />
+  </button>
+  <button class="popup-box">
+    <img class="popup-box-chest" src="/images/wardrobe/chest/top.svg" />
+  </button>
   </div>
-  <div v-else-if="false">
-    Legs here
+  <div class="popup-inside" v-else-if= "selection === 'legs'">
+    <button class="popup-box">
+    <img class="popup-box-legs" src="/images/wardrobe/legs/ballerina.svg" />
+  </button>
+  <button class="popup-box">
+    <img class="popup-box-legs" src="/images/wardrobe/legs/cuteskirt.svg" />
+  </button>
+  <button class="popup-box">
+    <img class="popup-box-legs" src="/images/wardrobe/legs/jeans.svg" />
+  </button>
+  <button class="popup-box">
+    <img class="popup-box-legs" src="/images/wardrobe/legs/pants.svg" />
+  </button>
+  <button class="popup-box">
+    <img class="popup-box-legs" src="/images/wardrobe/legs/shorts.svg" />
+  </button>
   </div>
-  <!-- <button class="popup-box">
-    <img class="popup-box-pants" src="/images/wardrobe/legs/pants.svg" />
-  </button>
-  <button class="popup-box">
-    <img class="popup-box-pants" src="/images/wardrobe/legs/pants.svg" />
-  </button>
-  <button class="popup-box">
-    <img class="popup-box-pants" src="/images/wardrobe/legs/pants.svg" />
-  </button>
-  <button class="popup-box">
-    <img class="popup-box-pants" src="/images/wardrobe/legs/pants.svg" />
-  </button>
-  <button class="popup-box">
-    <img class="popup-box-pants" src="/images/wardrobe/legs/pants.svg" />
-  </button>
-  <button class="popup-box">
-    <img class="popup-box-pants" src="/images/wardrobe/legs/pants.svg" />
-  </button>
-  <button class="popup-box">
-    <img class="popup-box-pants" src="/images/wardrobe/legs/pants.svg" />
-  </button> -->
+
 </div>
 </template>
 

@@ -4,9 +4,14 @@ import Popupbox from '@/components/Selector/Popupbox'
 </script>
 
 <template> 
-    <Box />
-    <Popupbox />
-</template>
+
+<div class="selector">
+      <Box />
+
+      <Popupbox />
+    </div>
+
+  </template>
   
 <style lang="scss" scoped>
 @use './styles.scss';

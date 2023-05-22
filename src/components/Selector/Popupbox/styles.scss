@@ -2,24 +2,25 @@
   display: flex;
   flex-direction: column;
   background: var(--color-orange);
-  width: var(--global-size-m);
-  height: var(--global-size-xl);
-  margin: 0px 0px 0px 30px;
+  width: 100%;
+  height: 100%;
   align-items: center;
-  border-radius: 0px 0px 0px 10px;
-  border: 5px solid;
-  border-color: var(--color-bubblegum);
-  border-top: 0px;
   overflow-y: scroll;
-  position: relative;
-  padding: 20px 0px 20px 0px;
+  position: absolute;
+}
+
+.popup-inside {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .popup-box {
   display: flex;
   box-sizing: border-box;
-  width: var(--global-size-l);
-  height: var(--global-size-s);
+  width: 150px;
+  height: 150px;
   margin: 10px 0px 10px 0px;
   background: var(--color-grey);
   border: 10px solid;
@@ -34,9 +35,9 @@
   border-color: var(--color-bubblegum);
 }
 
-.popup-box-hair,
-.popup-box-hoodie,
-.popup-box-pants {
+.popup-box-head,
+.popup-box-chest,
+.popup-box-legs {
   width: 80%;
   object-fit: contain;
   height: 70%;
@@ -54,6 +55,7 @@
   border-color: var(--color-sky);
   border-style: solid;
   border-radius: 3px;
+  z-index: 1;
 }
 
 .back-button:hover {
