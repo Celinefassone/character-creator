@@ -2,16 +2,15 @@
 
   <div class="character-box">
     <div class="character-box-head">
-      <!-- <img class="character-box-img" src="/src/assets/head.svg" /> -->
+      <img class="character-box-img" src="/images/head.svg" />
     </div>
     <div class="character-box-chest">
-      <!-- <img class="character-box-img" src="/src/assets/chest.svg" /> -->
-      <!-- <img class="character-box-shirt" src="/src/assets/wardrobe/chest/top.svg" /> -->
-
+      <img class="character-box-img" src="/images/chest.svg" />
+      <img class="character-box-shirt" src="/images/wardrobe/chest/top.svg" />
     </div>
     <div class="character-box-legs">
-      <!-- <img class="character-box-img" src="/src/assets/legs.svg" /> -->
-      <!-- <img class="character-box-pants" src="/src/assets/wardrobe/legs/shorts.svg" /> -->
+      <img class="character-box-img" src="/images/legs.svg" />
+      <img class="character-box-pants" src="/images/wardrobe/legs/shorts.svg" />
     </div>
   </div>
 
