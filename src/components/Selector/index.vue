@@ -5,12 +5,12 @@ import Popupbox from '@/components/Selector/Popupbox'
 </script>
 
 <template> 
-    <div class="selector"> 
+   
       <Box />
-    </div>
-    <div class="popup"> 
+
+   
       <Popupbox />
-    </div>
+  
   </template>
   
   <style lang="scss" scoped>

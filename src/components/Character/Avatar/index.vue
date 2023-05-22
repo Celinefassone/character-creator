@@ -6,12 +6,12 @@
     </div>
     <div class="character-box-chest">
       <img class="character-box-img" src="/src/assets/chest.svg" />
-      <img class="character-box-shirt" src="/src/assets/wardarobe/chest/top.svg" />
+      <img class="character-box-shirt" src="/src/assets/wardrobe/chest/top.svg" />
 
     </div>
     <div class="character-box-legs">
       <img class="character-box-img" src="/src/assets/legs.svg" />
-      <img class="character-box-pants" src="/src/assets/wardarobe/legs/shorts.svg" />
+      <img class="character-box-pants" src="/src/assets/wardrobe/legs/shorts.svg" />
 
     </div>
   </div>

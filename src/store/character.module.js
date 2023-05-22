@@ -1,6 +1,4 @@
-import { createStore } from "vuex";
-
-export default createStore({
+export default {
   namespaced: true,
   state: {
     head: "",
@@ -18,6 +16,4 @@ export default createStore({
       state.legs = legs;
     },
   },
-});
-
-// this.$store.commit('character/SET_HEAD, 'something')
+};
