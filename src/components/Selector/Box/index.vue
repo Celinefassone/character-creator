@@ -1,12 +1,12 @@
 <template>
  <div class="selector"> 
-  <button class="selector-box" @click="handleClick('/images/wardrobe/head/hair.svg')" ref="button">
+  <button class="selector-box" @click="handleClick('head')">
       <img class="selector-box-hair" src="/images/wardrobe/head/hair.svg" />
     </button>
-    <button class="selector-box" @click="handleClick('/images/wardrobe/chest/hoodie.svg')">
+    <button class="selector-box" @click="handleClick('body')">
       <img class="selector-box-hoodie" src="/images/wardrobe/chest/hoodie.svg" />
     </button>
-    <button class="selector-box"  @click="handleClick('/images/wardrobe/legs/pants.svg')">
+    <button class="selector-box"  @click="handleClick('legs')">
       <img class="selector-box-pants" src="/images/wardrobe/legs/pants.svg" />
     </button>
   </div>
@@ -16,8 +16,9 @@
 
 export default {
   methods: {
-    handleClick(item) {
-      this.$store.commit('character/SET_HEAD', item);
+    handleClick(selection) {
+      this.$store.commit('global/SET_SELECTION', selection);
+      this.$store.commit('global/SHOW_POPUP');
     }
   }
 }
