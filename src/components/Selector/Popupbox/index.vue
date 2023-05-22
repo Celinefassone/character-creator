@@ -1,7 +1,21 @@
+<script setup>
+import { mapState } from 'vuex'
+</script>
+
 <template>
-<div v-show="modalActive" class="popup"> 
-<button class="back-button"> ← </button>
-  <button class="popup-box">
+  <h1>{{selection}}</h1>
+<div v-show="isVisible" class="popup">
+  <button class="back-button" @click="handleClose"> ← </button>
+  <div v-if="false">
+    Legs here
+  </div>
+  <div v-else-if="false">
+    Legs here
+  </div>
+  <div v-else-if="false">
+    Legs here
+  </div>
+  <!-- <button class="popup-box">
     <img class="popup-box-pants" src="/images/wardrobe/legs/pants.svg" />
   </button>
   <button class="popup-box">
@@ -21,18 +35,24 @@
   </button>
   <button class="popup-box">
     <img class="popup-box-pants" src="/images/wardrobe/legs/pants.svg" />
-  </button>
+  </button> -->
 </div>
 </template>
 
-<script> 
+<script>
 export default {
-    props: ["modalActive"],
-  };
-    
-  
+  computed: mapState({
+    isVisible: (state) => state.global.isVisible,
+    selection: (state) => state.global.selection
+  }),
+  methods: {
+    handleClose() {
+      this.$store.commit('global/HIDE_POPUP')
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-  @use './styles.scss';
-  </style>
+@use './styles.scss';
+</style>
