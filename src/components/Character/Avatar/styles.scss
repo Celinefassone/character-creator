@@ -20,15 +20,18 @@
 }
 
 .character-box-head {
+  background-image: url("/images/head.svg");
   height: 36%;
 }
 
 .character-box-chest {
+  background-image: url("/images/chest.svg");
   height: 27%;
   position: relative;
 }
 
 .character-box-legs {
+  background-image: url("/images/legs.svg");
   height: 37%;
   position: relative;
 }
