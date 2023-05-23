@@ -6,10 +6,12 @@ import Popupbox from '@/components/Selector/Popupbox'
 <template> 
 
 <div class="selector">
-      <Box />
+     
+  <Box />
 
-      <Popupbox />
-    </div>
+  <Popupbox />
+
+</div>
 
   </template>
   

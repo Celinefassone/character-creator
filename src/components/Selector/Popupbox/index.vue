@@ -68,7 +68,9 @@ export default {
       this.$store.commit('global/HIDE_POPUP')
     },
     handleClick(event) {
-      console.log(event.target.src)
+      this.$store.commit('global/SET_HEADSELECTED', event.target.src)
+      this.$store.commit('global/SET_CHESTSELECTED', event.target.src)
+      this.$store.commit('global/SET_LEGSSELECTED', event.target.src)
     }
   }
 };

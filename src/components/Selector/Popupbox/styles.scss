@@ -20,7 +20,7 @@
   display: flex;
   box-sizing: border-box;
   width: 150px;
-  height: 150px;
+  height: 130px;
   margin: 10px 0px 10px 0px;
   background: var(--color-grey);
   border: 10px solid;
@@ -38,9 +38,9 @@
 .popup-box-head,
 .popup-box-chest,
 .popup-box-legs {
-  width: 80%;
+  width: 95%;
   object-fit: contain;
-  height: 70%;
+  height: 95%;
   cursor: pointer;
 }
 

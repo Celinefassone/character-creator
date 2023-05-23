@@ -42,6 +42,14 @@
   object-fit: contain;
 }
 
+.character-box-hair {
+  position: absolute;
+  z-index: 1;
+  width: 11%;
+  right: 493px;
+  object-fit: contain;
+}
+
 .character-box-shirt {
   position: absolute;
   left: 0px;
