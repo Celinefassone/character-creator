@@ -1,21 +1,22 @@
+<script setup>
+import { mapState } from 'vuex'
+</script>
+
 <template>
-  <button class="selector-box" @click="handleClick('head')">
-      <img class="selector-box-hair" src="/images/wardrobe/head/hair.svg" />
-    </button>
-    <button class="selector-box" @click="handleClick('chest')">
-      <img class="selector-box-hoodie" src="/images/wardrobe/chest/hoodie.svg" />
-    </button>
-    <button class="selector-box"  @click="handleClick('legs')">
-      <img class="selector-box-pants" src="/images/wardrobe/legs/pants.svg" />
-    </button>
+  <button class="selector-box" @click="handleClick(section.type)" v-for="(section) in sections">
+    <img class="selector-box-hair" :src="`/images/wardrobe/${section.type}/default.svg`" />
+  </button>
 </template>
 
 <script>
 
 export default {
+  computed: mapState({
+    sections: (state) => state.character.sections,
+  }),
   methods: {
-    handleClick(selection) {
-      this.$store.commit('global/SET_SELECTION', selection);
+    handleClick(type) {
+      this.$store.commit('character/SET_TYPE', type);
       this.$store.commit('global/SHOW_POPUP');
     }
   }
