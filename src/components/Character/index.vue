@@ -8,39 +8,16 @@ import { mapState } from 'vuex'
 <template> 
   <div class="character">
     <div class="character-colours">
-      <button 
+    <button
+      v-for="colour in colours"
       type="button"
-  @click="handleClick(colours[0].class)"
-  :class="`character-colours-${colours[0].class} character-colours-selection`" 
-></button>
-      <button
-      type="button"
-  @click="handleClick(colours[1].class)"
-  :class="`character-colours-${colours[1].class} character-colours-selection`" 
-      ></button>
-      <button
-      type="button"
-  @click="handleClick(colours[2].class)"
-  :class="`character-colours-${colours[2].class} character-colours-selection`" 
-      ></button>
-      <button
-      type="button"
-  @click="handleClick(colours[3].class)"
-  :class="`character-colours-${colours[3].class} character-colours-selection`" 
-      ></button>
-      <button
-      type="button"
-  @click="handleClick(colours[4].class)"
-  :class="`character-colours-${colours[4].class} character-colours-selection`" 
-      ></button>
-      <button
-      type="button"
-  @click="handleClick(colours[5].class)"
-  :class="`character-colours-${colours[5].class} character-colours-selection`" 
-      ></button>
-    </div>
-    <Avatar /> 
+      @click="handleClick(colour.class)"
+      :class="`character-colours-${colour.class} character-colours-selection`" 
+    ></button>
   </div>
+<Avatar /> 
+
+    </div>  
   </template>
 
 <script>
