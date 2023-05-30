@@ -27,3 +27,4 @@ export default {
 <style lang="scss" scoped>
   @use './styles.scss';
   </style>
+  

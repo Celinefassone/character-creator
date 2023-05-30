@@ -22,18 +22,22 @@
 .character-box-head {
   background-image: url("/images/wardrobe/head/avatar.svg");
   height: 36%;
+  display: flex;
+  justify-content: center;
 }
 
 .character-box-chest {
   background-image: url("/images/wardrobe/chest/avatar.svg");
   height: 27%;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .character-box-legs {
   background-image: url("/images/wardrobe/legs/avatar.svg");
   height: 37%;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .character-box-img {
@@ -43,26 +47,17 @@
 }
 
 .character-box-hair {
-  position: absolute;
-  z-index: 1;
-  width: 11%;
-  right: 493px;
+  width: 90%;
   object-fit: contain;
 }
 
 .character-box-shirt {
-  position: absolute;
-  left: 0px;
-  z-index: 1;
-  width: 100%;
+  width: 90%;
   object-fit: contain;
 }
 
 .character-box-pants {
-  position: absolute;
-  left: 45px;
-  z-index: 1;
-  width: 47%;
+  width: 50%;
   object-fit: contain;
 }
 

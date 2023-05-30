@@ -1,5 +1,5 @@
 <template>
-       <header class="header">MAKE YOUR CHARACTER!</header>
+       <header class="header">MAKE YOUR CHARACTER</header>
 
 </template>
 

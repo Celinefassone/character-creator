@@ -1,38 +1,63 @@
 <script setup>
 import Avatar from '@/components/Character/Avatar'
+import { mapState } from 'vuex'
 </script>
 
+
+
 <template> 
-<div class="character">
-  <div class="character-colours">
-    <button
+  <div class="character">
+    <div class="character-colours">
+      <button 
       type="button"
-      class="character-colours-selection character-colours-pink"
-    ></button>
-    <button
+  @click="handleClick(colours[0].class)"
+  :class="`character-colours-${colours[0].class} character-colours-selection`" 
+></button>
+      <button
       type="button"
-      class="character-colours-selection character-colours-orange"
-    ></button>
-    <button
+  @click="handleClick(colours[1].class)"
+  :class="`character-colours-${colours[1].class} character-colours-selection`" 
+      ></button>
+      <button
       type="button"
-      class="character-colours-selection character-colours-lilac"
-    ></button>
-    <button
+  @click="handleClick(colours[2].class)"
+  :class="`character-colours-${colours[2].class} character-colours-selection`" 
+      ></button>
+      <button
       type="button"
-      class="character-colours-selection character-colours-turquoise"
-    ></button>
-    <button
+  @click="handleClick(colours[3].class)"
+  :class="`character-colours-${colours[3].class} character-colours-selection`" 
+      ></button>
+      <button
       type="button"
-      class="character-colours-selection character-colours-yellow"
-    ></button>
-    <button
+  @click="handleClick(colours[4].class)"
+  :class="`character-colours-${colours[4].class} character-colours-selection`" 
+      ></button>
+      <button
       type="button"
-      class="character-colours-selection character-colours-mint"
-    ></button>
+  @click="handleClick(colours[5].class)"
+  :class="`character-colours-${colours[5].class} character-colours-selection`" 
+      ></button>
+    </div>
+    <Avatar /> 
   </div>
-  <Avatar /> 
-</div>
-</template>
+  </template>
+
+<script>
+
+export default {
+  computed: mapState({
+    colours: (state) => state.character.colours,
+  }),
+  methods: {
+    handleClick(colours) {
+      this.$store.commit('character/SET_COLOURS', colours);
+    }
+  }
+}
+</script>
+
+
 
 <style lang="scss" scoped>
   @use './styles.scss';
